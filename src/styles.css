@@ -1,0 +1,25 @@
+.react-image {
+  position: relative;
+  display: block;
+  height: auto;
+}
+
+.react-image.ratio {
+  height: 0;
+}
+
+.react-image img {
+  height: inherit;
+  opacity: 0;
+  will-change: opacity;
+  transition: opacity .5s ease-out;
+  object-fit: cover;
+}
+
+.react-image.ratio img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

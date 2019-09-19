@@ -1,0 +1,46 @@
+{
+  "name": "@born05/react-image",
+  "version": "1.0.0",
+  "description": "React image component, handling lazy-loading, responsiveness and aspect-ratio.",
+  "author": "Born05",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/born05/react-image.git"
+  },
+  "bugs": {
+    "url": "https://github.com/born05/react-image/issues"
+  },
+  "homepage": "https://github.com/born05/react-image",
+  "main": "dist/index.js",
+  "sideEffects": false,
+  "browserslist": "last 1 version, > 1%, not dead",
+  "scripts": {
+    "lint": "eslint ./src",
+    "transpile": "babel src -d dist --copy-files",
+    "prepublishOnly": "npm run transpile"
+  },
+  "peerDependencies": {
+    "@researchgate/react-intersection-observer": "^1.0.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.9.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.0",
+    "@babel/core": "^7.6.0",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-proposal-object-rest-spread": "^7.5.5",
+    "@babel/preset-env": "^7.6.0",
+    "@babel/preset-react": "^7.0.0",
+    "@researchgate/react-intersection-observer": "^1.0.1",
+    "babel-eslint": "^10.0.3",
+    "core-js": "^3.2.1",
+    "eslint": "^6.4.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.3",
+    "prop-types": "^15.7.2",
+    "react": "^16.9.0"
+  }
+}
